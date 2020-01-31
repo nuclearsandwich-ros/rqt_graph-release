@@ -1,0 +1,13 @@
+Source: ros-turbulent-rqt-graph
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-turbulent-ros-workspace, python3-all, python3-setuptools
+Homepage: http://wiki.ros.org/rqt_graph
+Standards-Version: 3.9.2
+
+Package: ros-turbulent-rqt-graph
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-turbulent-ament-index-python, ros-turbulent-python-qt-binding, ros-turbulent-qt-dotgraph, ros-turbulent-rqt-gui, ros-turbulent-rqt-gui-py, ros-turbulent-ros-workspace
+Description: rqt_graph provides a GUI plugin for visualizing the ROS computation graph.
+ Its components are made generic so that other packages where you want to achieve graph representation can depend upon this pkg (use rqt_dep to find out the pkgs that depend. rqt_dep itself depends on rqt_graph too).
